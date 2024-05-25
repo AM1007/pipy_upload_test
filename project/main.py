@@ -1,13 +1,13 @@
 from prompt_toolkit.auto_suggest import AutoSuggestFromHistory
-from data.global_declarations import session, exit_procedure, parse_input, show_help
-from data.classes import AddressBook, NoteBook
+from .data.global_declarations import session, exit_procedure, parse_input, show_help
+from .data.classes import AddressBook, NoteBook
 
-from data.address_book_functions import (   upcoming_birthdays, add_email_in_rec, edit_email_in_rec, del_email_in_rec, 
+from .data.address_book_functions import (   upcoming_birthdays, add_email_in_rec, edit_email_in_rec, del_email_in_rec, 
                                             birthday_record, del_birthday, address_record, del_address, 
                                             add_record, edit_record, del_record, add_phone_in_rec, edit_phone_in_rec, del_phone_in_rec,
                                             find_in_records  )
 
-from data.notebook_functions import find_in_notes, find_in_tags, sort_by_tags, add_note, edit_note, del_note, add_tag, del_tag
+from .data.notebook_functions import find_in_notes, find_in_tags, sort_by_tags, add_note, edit_note, del_note, add_tag, del_tag
 
 
 def main():
